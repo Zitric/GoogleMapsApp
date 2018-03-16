@@ -25,7 +25,7 @@ export class AppComponent {
     const newMarker: Marker = {
       lat: event.coords.lat,
       lng: event.coords.lng,
-      title: 'sin título',
+      title: 'Sin título',
       draggable: true
     };
 
