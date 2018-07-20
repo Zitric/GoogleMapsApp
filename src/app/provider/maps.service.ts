@@ -13,18 +13,18 @@ export class MapsService {
     this.saveMarkers();
   }
 
-  removeMarker( index: number) {
-    this.markers.splice(index, 1);
+  removeMarker( index: number ) {
+    this.markers.splice( index, 1 );
     this.saveMarkers();
   }
 
   saveMarkers() {
-    localStorage.setItem('markers', JSON.stringify(this.markers));
+    localStorage.setItem('markers', JSON.stringify( this.markers ));
   }
 
   loadMarkers() {
     localStorage.getItem('markers') ?
-        this.markers = JSON.parse( localStorage.getItem('markers')) :
+        this.markers = JSON.parse( localStorage.getItem('markers' )) :
         this.markers = [];
   }
 }
